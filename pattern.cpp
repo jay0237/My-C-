@@ -1,20 +1,20 @@
-// #include<iostream>
-// using namespace std;
+// // // #include<iostream>
+// // // using namespace std;
 
-// int main() {
+// // // int main() {
 
-//     int n=5;
+// // //     int n=5;
 
-//     for (int i=1;i<=n;i++){
-//         for (int j=1;j<=n;j++){
-//             cout << "* ";
-//         }
+// // //     for (int i=1;i<=n;i++){
+// // //         for (int j=1;j<=n;j++){
+// // //             cout << "* ";
+// // //         }
 
-//         cout << endl;
-//     }
+// // //         cout << endl;
+// // //     }
 
-//     return 0;
-// }
+// // //     return 0;
+// // // }
 
 
 
@@ -37,50 +37,93 @@
 // // }
 
 
-// // #include <iostream>
-// // using namespace std;
+// // // // #include <iostream>
+// // // // using namespace std;
 
-// // int main(){
-// //     int n;
+// // // // int main(){
+// // // //     int n;
 
-// //     cout << "Enter the value: " << endl;
-// //     cin >> n;
+// // // //     cout << "Enter the value: " << endl;
+// // // //     cin >> n;
 
-// //     for (int i=0;i<n;i++){
-// //         char ch = 'A';
+// // // //     for (int i=0;i<n;i++){
+// // // //         char ch = 'A';
 
-// //         for (int j=0;j<n;j++){
-// //             cout << ch;
-// //             ch = ch + 1;
-// //         }
-// //         cout << endl;
-// //     }
+// // // //         for (int j=0;j<n;j++){
+// // // //             cout << ch;
+// // // //             ch = ch + 1;
+// // // //         }
+// // // //         cout << endl;
+// // // //     }
 
-// //     return 0;
-// // }
+// // // //     return 0;
+// // // // }
+
+// // // #include<iostream>
+// // // using namespace std;
+
+// // // int main() {
+
+// // //     int n;
+
+// // //     cout << "Enter a value: " << endl;
+// // //     cin >> n;
+
+// // //     for(int i=0;i<n;i++){
+// // //         for(int j=0;j<n;j++){
+// // //             if (i==0 || j==0 || i==n-1 || j==n-1){
+// // //                 cout << "* ";
+// // //             }
+// // //             else{
+// // //                 cout << "  ";
+// // //             }
+// // //         }
+
+// // //         cout << endl;
+// // //     }
+
+// // //     return 0;
+// // // }
+
 
 // #include<iostream>
 // using namespace std;
 
-// int main() {
-
+// int main(){
 //     int n;
 
-//     cout << "Enter a value: " << endl;
+//     cout << "Enter a number: " << endl;
 //     cin >> n;
 
-//     for(int i=0;i<n;i++){
-//         for(int j=0;j<n;j++){
-//             if (i==0 || j==0 || i==n-1 || j==n-1){
-//                 cout << "* ";
-//             }
-//             else{
-//                 cout << "  ";
-//             }
+//     for (int i=0;i<n;i++){
+//         char ch = 'A';
+//         for (int j=0;j<i+1;j++){
+//             cout << ch << " ";
+//             ch = ch + 1;
 //         }
-
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
+
+#include<iostream>
+using namespace std;
+
+
+int main(){
+
+    int n;
+    int num = 1;
+
+    cout << "Enter a number: " << endl;
+    cin >> n;
+
+    for (int i=0;i<n;i++){
+        for (int j=0;j<i+1;j++){
+            cout << num << " ";
+            num++;
+        }
+        cout << endl;
+    }
+    return 0;
+}
